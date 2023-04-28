@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from '../styles/product.module.css'
 import { products } from '../../interface/interface'
-const Card = ({item}) => {
-
+const Card = (props:any) => {
+const{item} = props;
 
 
   return (
