@@ -8,7 +8,7 @@
 
 
 .sideWrapper select {
-    width: 200px;
+        width: 85%;
     height: 50px;
     border-radius: 5px;
 outline:none;
@@ -20,11 +20,26 @@ background-color:transparent;
 }
 
 .sideWrapper input[type="range"]{
-    width: 200px;
+    width: 85%;
 }
 
 .sideWrapper h5{
     font-size: .8rem;
     text-transform: uppercase;
     margin-top: 3rem;
+}
+
+.sort{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.labelWrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }

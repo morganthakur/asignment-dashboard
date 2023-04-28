@@ -99,13 +99,16 @@ const Sidebar = () => {
   return (
     <>
       <div className={styles.sideWrapper}>
-        <h5>Sort by</h5>
-        <select name="" id="" onChange={handleSort}>
-          <option value="">Sort</option>
-          <option value="dsc">Dscending</option>
-          <option value="asc">Ascending</option>
-        </select>
-        <div>
+        <div className={styles.sort}>
+          <h5>Sort by</h5>
+          <select name="" id="" onChange={handleSort}>
+            <option value="">Sort</option>
+            <option value="dsc">Dscending</option>
+            <option value="asc">Ascending</option>
+          </select>
+        </div>
+
+        <div className={styles.sort}>
           <h5>Price</h5>
           <input
             type="range"
@@ -115,13 +118,13 @@ const Sidebar = () => {
             max={1749}
             onChange={handlePrice}
           />
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div className={styles.labelWrapper}>
             <span>12</span>
             <span> {maxPrice ? maxPrice : "0"} </span>
             <span>1749</span>
           </div>
         </div>
-        <div>
+        <div className={styles.sort}>
           <h5>Category</h5>
           <select name="" id="" onChange={handleCategory}>
             <option value="">All</option>
@@ -135,7 +138,7 @@ const Sidebar = () => {
           </select>
         </div>
 
-        <div>
+        <div className={styles.sort}>
           <h5>Brand</h5>
           <select name="" id="" onChange={handleBrand}>
             <option value="">Brand</option>
