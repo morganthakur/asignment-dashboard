@@ -1,0 +1,27 @@
+.header{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-around;
+height: 50px;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.search input{
+    width:400px;
+    height:30px;
+    outline:none;
+    border:none;
+    background-color:transparent;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.129),inset -5px -5px 15px rgba(0, 0, 0, 0.123);
+    border-radius: 20px;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
