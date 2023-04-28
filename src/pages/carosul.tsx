@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import { useGetAllProductsQuery } from "../../redux/Services/ProductApi";
 function UncontrolledExample() {
 
-  const { data, error, isLoading } = useGetAllProductsQuery();
+  const { data, error, isLoading } = useGetAllProductsQuery("");
 
   return (
     <>

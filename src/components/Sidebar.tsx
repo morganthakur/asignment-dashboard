@@ -44,7 +44,7 @@ const Sidebar = () => {
 
   //------------------------- getting the brands here---------------------------
 
-  const { data, error, isLoading } = useGetAllProductsQuery();
+  const { data, error, isLoading } = useGetAllProductsQuery("");
 
   //----------------------- getting all the categories here-----------------------
 

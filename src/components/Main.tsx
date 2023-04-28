@@ -15,7 +15,7 @@ const Main = () => {
   const productDATA = useSelector((state: any) => state.product.data);
 
 // gettting all the products by redux 
-  const { data, error, isLoading } = useGetAllProductsQuery();
+  const { data, error, isLoading } = useGetAllProductsQuery("");
 
 
   // setting the data to the redux reducer to access this data in all components
