@@ -14,10 +14,11 @@ function UncontrolledExample() {
         <Carousel >
           {data?.products.map((item: any, index: any) => {
             return (
-              <Carousel.Item>
+              <Carousel.Item  key={index} >
                 <img
                   // className="d-block w-100"
                   src={item?.thumbnail}
+                  alt=""
                 />
               </Carousel.Item>
             );
